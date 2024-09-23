@@ -1,0 +1,506 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap");
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "cairo", "Arial";
+  /* direction: rtl; */
+  height: 100vh;
+  width: 100%;
+}
+
+header li,
+a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: white;
+  list-style: none;
+}
+
+header {
+  background-color: #0a660a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  width: 100%;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+header img {
+  width: 50px;
+}
+header ul li a {
+  transition: all 0.3s ease 0s;
+}
+header ul li a:hover {
+  color: rgb(163, 205, 163);
+}
+.main-section {
+  /* width: 1200px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 200px; */
+  /* padding: 30px 0; */
+  margin: 80px 10px;
+}
+
+.left-image {
+  width: 50%;
+}
+.left-image img {
+  width: 600px;
+}
+
+.right-text {
+  direction: rtl;
+  margin: auto;
+}
+.right-text h1 {
+  color: green;
+  font-size: 50px;
+  font-size: bold;
+  text-wrap: wrap;
+}
+.shop-now-btn {
+  padding: 10px 20px;
+  color: white;
+  background-color: green;
+  border-radius: 30px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+.about-us .right-image {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.about-us img {
+  width: 600px;
+}
+.about-us-text {
+  width: 30%;
+  /* padding: 40px; */
+  direction: rtl;
+  margin: auto;
+}
+.about-us-text h2 {
+  color: green;
+  font-size: 28px;
+}
+.about-us-text p {
+  color: gray;
+  font-size: 20px;
+  line-height: 1.6em;
+  font-weight: bold;
+  text-wrap: wrap;
+}
+.vision-mission {
+  /* width: 100%; */
+  /* display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 0; */
+  /* margin: 50px 0; */
+  display: flex;
+  margin: 40px 0;
+}
+.vision {
+  display: inline-block;
+  width: 50%;
+  direction: rtl;
+  background-color: green;
+  color: white;
+  padding: 30px 150px 30px 0;
+}
+.mission {
+  display: inline-block;
+  width: 50%;
+  direction: rtl;
+  color: white;
+  padding: 30px 150px 30px 0;
+  background-color: rgb(149, 194, 149);
+}
+.products {
+  text-align: center;
+  margin: 0 auto;
+}
+.product-list {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+.product-list .product {
+  width: 250px;
+  border: 2px solid #008000;
+  border-radius: 18px;
+  text-align: center;
+  box-sizing: border-box;
+}
+.product-list img {
+  width: 100%;
+  height: auto;
+  border-radius: 19px;
+  margin-bottom: -10px;
+  z-index: 0;
+}
+.product-list p {
+  font-size: 18px;
+  color: #008000;
+  padding: 15px 0;
+  background-color: #e6ede6;
+  border-top: 4px solid #008000;
+  border-radius: 18px;
+  font-weight: bold;
+}
+
+.see-more {
+  margin: 20px 0;
+}
+.left-arrow {
+  margin-right: 12px;
+  cursor: pointer;
+}
+.our-history {
+  background-color: rgb(236, 232, 232);
+}
+.container {
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  margin: 20px auto;
+}
+
+/* Left side with boxes */
+.left-side {
+  max-width: 40%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* Styling for each box */
+.box {
+  border: 2px solid #008000; /* Green border */
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+  color: #333;
+  width: 150px;
+  box-sizing: border-box; /* Ensures padding fits inside the box */
+}
+
+/* Right side paragraph section */
+.right-side {
+  direction: rtl;
+  max-width: 40%;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #333;
+}
+.right-side p {
+  font-weight: bold;
+  margin-right: -13px;
+}
+.contact-info {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  gap: 60px;
+  width: 65%;
+  margin: 80px auto;
+  padding: 0 60px;
+}
+.branches {
+  margin-bottom: 100px;
+}
+.branch {
+  direction: rtl;
+  padding: 10px;
+}
+.branch li {
+  font-weight: bold;
+}
+.branch p {
+  color: #333;
+  font-weight: 400;
+}
+.contact-form {
+  width: 50%;
+}
+
+input {
+  direction: rtl;
+  width: 100%;
+  border: 1px solid #d3cfcf;
+  border-radius: 5px;
+  padding: 15px;
+  outline-style: none;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+  border-radius: 14px;
+}
+form textarea {
+  width: 100%;
+  height: 200px;
+  direction: rtl;
+  border: 1px solid #d3cfcf;
+  /* max-width: 100%; */
+  font-size: 20px;
+  color: #333;
+  padding: 15px;
+  border-radius: 14px;
+  outline-style: none;
+  font-weight: 500;
+}
+.rights {
+  width: 100%;
+  background-color: green;
+  padding: 20px;
+  margin-top: 30px;
+  bottom: 0;
+}
+.rights p {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+/* Media Queries for Mobile */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  header ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  header ul li {
+    padding: 10px 0;
+  }
+
+  /* Main Section */
+  .main-section {
+    flex-direction: column;
+    margin: 20px 10px;
+  }
+
+  .left-image,
+  .right-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .left-image img {
+    width: 100%;
+  }
+
+  .right-text h1 {
+    font-size: 30px;
+  }
+
+  .shop-now-btn {
+    font-size: 20px;
+    padding: 10px 15px;
+  }
+
+  /* About Us */
+  .about-us {
+    flex-direction: column;
+  }
+
+  .about-us .right-image,
+  .about-us-text {
+    width: 100%;
+  }
+  /* Adjustments for 'Our History' Section */
+  .our-history {
+    background-color: rgb(236, 232, 232);
+    padding: 20px;
+  }
+
+  /* Default layout for larger screens */
+  .container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 20px auto;
+  }
+
+  /* Left side with boxes */
+  .left-side {
+    max-width: 40%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Right side paragraph section */
+  .right-side {
+    direction: rtl;
+    max-width: 40%;
+    font-size: 16px;
+    line-height: 1.9;
+    color: #333;
+  }
+  .right-side p {
+    font-weight: bold;
+    margin-right: -13px;
+  }
+
+  /* Mobile adjustments for 'Our History' */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      width: 90%; /* Reduce the width for better fit */
+      padding: 10px;
+      margin: 10px auto;
+    }
+
+    .left-side {
+      max-width: 100%;
+      grid-template-columns: 1fr; /* Make the boxes stack vertically */
+      gap: 15px; /* Reduce gap between the boxes */
+    }
+
+    .right-side {
+      max-width: 100%; /* Full width for text section */
+      font-size: 14px; /* Slightly smaller font for readability */
+      padding: 10px;
+    }
+
+    .right-side p {
+      margin-right: 0; /* Remove negative margin on mobile */
+      line-height: 1.7; /* Adjust line height for better readability */
+    }
+
+    .box {
+      width: 100%; /* Full width boxes on mobile */
+      padding: 10px;
+      font-size: 14px; /* Adjust font size for smaller screens */
+    }
+  }
+
+  /* Vision and Mission */
+  .vision-mission {
+    flex-direction: column;
+  }
+
+  .vision,
+  .mission {
+    width: 100%;
+    padding: 20px;
+  }
+
+  /* Products */
+  .product-list {
+    flex-direction: column;
+  }
+
+  /* Contact Info */
+  .contact-info {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+}
+/* General Styles (No change in general styles, keeping them as is) */
+
+/* Mobile Navbar */
+.navbar-toggle {
+  display: none; /* Hide the hamburger menu by default */
+  cursor: pointer;
+  font-size: 30px;
+  color: white;
+  background-color: #0a660a;
+  padding: 10px;
+  border: none;
+}
+
+.navbar-menu {
+  display: flex; /* Default display for larger screens */
+}
+
+@media (max-width: 768px) {
+  .navbar-menu {
+    display: none; /* Hide the menu on small screens by default */
+    flex-direction: column;
+    background-color: #0a660a; /* Mobile menu background */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    padding: 10px;
+  }
+
+  header {
+    position: relative;
+  }
+
+  .navbar-toggle {
+    display: block; /* Show the hamburger icon on mobile */
+    margin-left: auto;
+  }
+
+  /* Toggle the menu when hamburger is clicked */
+  .navbar-menu.active {
+    display: flex;
+  }
+
+  header ul li {
+    padding: 10px 0; /* Adjust padding for menu items */
+    text-align: center; /* Center the text for mobile */
+  }
+
+  /* Adjust the About Us Image */
+  .about-us .right-image {
+    width: 100%; /* Full width on mobile */
+  }
+
+  .about-us img {
+    width: 100%; /* Scale image to fit the container */
+    max-width: 100%; /* Ensure no overflow */
+    height: auto;
+  }
+}
+
+/* Example JavaScript to toggle the menu */
